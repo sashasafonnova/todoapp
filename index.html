@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ToDoList</title>
+</head>    
+<body>
+    <div class="wrapper">
+        <section class="header">
+            <div class="container">
+                <div class="header__top">
+                    <h1 class="header__title">TO DO LIST</h1>
+                    <button class="header__btn-info">
+                    </button>    
+                </div>     
+            </div>    
+        </section>
+        <section class="add-task">
+           <div class="container">
+                <h2 class="add-task__title">Add a new task ↓</h2>
+                <form class="add-task__form">
+                    <div class="add-task__string">
+                        <input class="add-task__input" type="text" placeholder="Text...">
+                        <button class="add-task__btn-reset" type="reset">Clean all</button>
+                    </div>
+                    <button class="add-task__btn-add" type="submit">Add</button>            
+                </form>
+            </div> 
+        </section>
+        <section class="tasks">
+            <div class="container">
+                <div class="tasks__content">
+                    <h2 class="tasks__title">Your tasks</h2>
+                    <div class="tasks__message">
+                        <img src="./src/img/ill.svg" alt="illustration">
+                    </div>    
+                    <ul class="tasks__list">
+                    </ul>                 
+                    <button class="tasks__btn-all-delete dsp-none">Delete all</button> 
+                    <button class="tasks__btn-done-delete dsp-none">Delete all done</button>   
+                </div>    
+            </div>    
+        </section> 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__title">Contact with us:</p>
+                    <a href="mailto:sasha@gmail.com" class="footer__email">sashasafonnova@gmail.com</a>
+                </div>    
+            </div>
+        </footer>  
+        <section id="info" class="info dsp-none">
+            <div class="info__window">
+                <div class="info__content">
+                    <button class="info__btn-close">X Close</button>
+                    <h3 class="info__title">TO DO LIST</h3>
+                    <p class="info__description">Hello! Welcome to To Do List. The app for daily planning your tasks</p>
+                    <div class="info__functions-list">
+                        <div class="info__function-done">
+                            <div class="info__finction-done-img">
+                                <img src="./src/img/icon-done-hover.svg" alt="icon-done">
+                            </div>
+                            <p class="info__function-done-text">Note your tasks as done</p>
+                        </div>
+                        <div class="info__function-delete">
+                            <div class="info__finction-delete-img">
+                                <img src="./src/img/icon-del-hover.svg" alt="icon-delete">
+                            </div>
+                            <p class="info__function-delete-text">Delete your tasks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
